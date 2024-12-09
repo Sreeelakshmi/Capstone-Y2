@@ -13,9 +13,14 @@ def fetch_weather(location):
         return f"Error fetching weather: {e}"
 
 def show_weather():
-    st.subheader("Check Weather")
+    st.subheader("🌤️ Check Weather")
     location = st.text_input("Enter Destination (e.g., Paris)")
     if location:
         location = location.replace(" ", "-")
         weather = fetch_weather(location)
-        st.write(f"Weather for {location}: {weather}")
+        st.write(f"🌍 Weather for {location.replace('-', ' ')}: {weather}")
+
+# Streamlit app execution
+if __name__ == "__main__":
+    st.title("Travel Assistant")
+    show_weather()
