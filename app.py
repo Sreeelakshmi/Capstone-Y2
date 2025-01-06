@@ -16,6 +16,7 @@ def main():
         "Chatbot",
         "Group Travel Planning",
         "Virtual Souvenirs",
+        "Weather"
     ]
     choice = st.sidebar.selectbox("Menu", menu)
 
@@ -34,6 +35,8 @@ def main():
         group_planning()
     elif choice == "Virtual Souvenirs":
         show_souvenirs()
+    elif choice =="Weather":
+        show_weather()
 
 if __name__ == "__main__":
     main()
