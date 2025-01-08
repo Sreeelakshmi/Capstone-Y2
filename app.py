@@ -36,7 +36,6 @@ def main():
     elif choice == "Virtual Souvenirs":
         show_souvenirs()
     elif choice =="Weather":
-        fetch_weather()
         show_weather()
 
 if __name__ == "__main__":
