@@ -5,7 +5,7 @@ from recommendations import get_recommendations
 from chatbot import start_chatbot
 from group_planning import group_planning
 from virtual_souvenirs import show_souvenirs
-from weather import show_weather
+from weather import show_weather, fetch_weather
 def main():
     st.title("AI-Driven Gamified Travel Advisor")
     menu = [
