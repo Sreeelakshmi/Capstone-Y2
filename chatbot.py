@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 import openai
 import pandas as pd
 from llama_index.llms.openai import OpenAI
