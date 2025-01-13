@@ -51,7 +51,7 @@ def load_csv_data(file_path):
 
 
 # File uploader in Streamlit
-uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+uploaded_file = st.file_uploader("data", type=["csv"])
 
 if uploaded_file:
     index = load_csv_data(uploaded_file)
